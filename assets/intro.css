@@ -1,0 +1,91 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+
+.intro-content h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.intro-content p {
+  max-width: 580px;
+  margin-top: 1rem;
+
+  color: var(--muted);
+
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.intro-content p:first-of-type {
+  margin-top: 3rem;
+}
+
+.strength {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+
+  padding-top: 0;
+  padding-bottom: 140px;
+}
+
+.strength-card {
+  min-height: 300px;
+  padding: 35px;
+
+  background: var(--white);
+  border: 1px solid var(--line);
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+}
+
+.strength-card:hover {
+  background: #e8f1ff;
+  transform: translateY(-10px);
+}
+
+.strength-card > span,
+.project-number,
+.skill-item > span {
+  color: var(--primary);
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.strength-card h3 {
+  margin-top: 100px;
+
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+}
+
+.strength-card p {
+  margin-top: 15px;
+
+  color: var(--muted);
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .strength {
+    grid-template-columns: 1fr;
+
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  .strength-card h3 {
+    margin-top: 60px;
+  }
+}

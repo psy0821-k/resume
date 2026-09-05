@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="사용자 경험과 성능, 접근성을 함께 고려하는 프론트엔드 개발자 박성윤의 포트폴리오입니다." />
+
+    <link rel="stylesheet" href="/assets/portfolio.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" src="./script/script.js"></script>
+    <title>박성윤 | Frontend Developer</title>
+  </head>
+
+  <body>
+    <h1 class="sr-only">박성윤 포트폴리오</h1>
+    <header class="header">
+      <a href="#" class="logo"> PSY.PORTFOLIO </a>
+
+      <nav id="main-navigation" class="nav">
+        <h2 class="sr-only">주요 메뉴</h2>
+        <ul>
+          <li>
+            <a href="#projects" aria-label="프로젝트 확인하기">Projects</a>
+          </li>
+          <li>
+            <a href="#skills" aria-label="사용가능 기술 확인하기">Skills</a>
+          </li>
+          <li>
+            <a href="#contact" aria-label="연락 이메일 확인하기">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">FRONTEND DEVELOPER</p>
+          <h1 id="hero-title">
+            Better
+            <span>Experience.</span>
+          </h1>
+          <p class="hero-description">요구사항을 이해하고, 성능과 사용자 경험까지 고민하는 개발자</p>
+          <a href="#projects" class="primary-button"> View Projects </a>
+        </div>
+      </section>
+
+      <section class="intro section" aria-labelledby="intro-title">
+        <div class="section-label">01 / intro</div>
+        <div class="intro-content">
+          <h2 id="intro-title">Intro</h2>
+          <p>안녕하세요. 사용자가 편하게 사용할 수 있는 웹을 만드는 프론트엔드 개발자 박성윤입니다.</p>
+          <p>단순히 화면을 구현하는 것에 그치지 않고, 사용자의 흐름과 인터랙션을 고려해 직관적인 UI를 설계하고 구현합니다.</p>
+          <p>
+            Semantic HTML과 WAI-ARIA를 기반으로 웹 접근성을 고려하며, Lighthouse와 Chrome DevTools를 활용해 성능과 접근성을 직접 측정하고 개선합니다.
+          </p>
+          <p>또한 반복되는 UI와 기능은 재사용 가능한 컴포넌트로 분리하여 유지보수성과 개발 효율을 높이는 것을 중요하게 생각합니다.</p>
+        </div>
+      </section>
+
+      <section class="strength section" aria-labelledby="strength-title">
+        <h2 id="strength-title" class="sr-only">주요 개발 역량</h2>
+
+        <article class="strength-card">
+          <span>01</span>
+          <h3>UI Engineering</h3>
+          <p>
+            사용자의 흐름과 인터랙션을 고려해 직관적인 UI를 구현합니다. 반복되는 UI와 기능은 재사용 가능한 컴포넌트로 분리해 일관성과 유지보수성을
+            높입니다.
+          </p>
+        </article>
+
+        <article class="strength-card">
+          <span>02</span>
+          <h3>Performance</h3>
+          <p>Lighthouse와 Chrome DevTools를 활용해 렌더링과 리소스를 분석하고, 실제 배포 환경에서 발생하는 성능 문제를 측정하고 개선합니다.</p>
+        </article>
+
+        <article class="strength-card">
+          <span>03</span>
+          <h3>Accessibility</h3>
+          <p>Semantic HTML과 WAI-ARIA를 기반으로 키보드 탐색과 포커스 흐름을 고려하고, 다양한 사용자가 이용할 수 있는 접근 가능한 UI를 구현합니다.</p>
+        </article>
+      </section>
+
+      <section id="projects" class="projects section" aria-labelledby="projects-title">
+        <div class="section-label">02 / PROJECTS</div>
+
+        <div class="section-heading">
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <div class="project-list">
+          <!-- PROJECT 01 -->
+          <article class="project-card">
+            <div class="project-number">01</div>
+
+            <div class="project-info">
+              <p class="project-type">INTERACTIVE WEB</p>
+
+              <h3>인터랙티브 쇼케이스</h3>
+
+              <p class="project-description">
+                GSAP과 R3F를 활용해 3D 인터랙션을 구현하고, 성능과 접근성을 직접 측정하며 개선한 인터랙티브 웹 프로젝트입니다.
+              </p>
+
+              <div class="project-contribution">
+                <strong>My Contribution</strong>
+
+                <ul>
+                  <li>3D 인터랙션 및 GSAP 애니메이션 구현</li>
+                  <li>GLB 최적화 71MB → 5MB</li>
+                  <li>Chrome DevTools 기반 FPS 및 GPU 메모리 측정</li>
+                  <li>Playwright E2E 테스트</li>
+                </ul>
+              </div>
+
+              <div class="tags" aria-label="사용 기술">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>GSAP</span>
+                <span>R3F</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="GITHUB_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase GitHub 보기">
+                <span>GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="DEPLOY_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase 배포 사이트 보기">
+                <span>Live</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-card">
+            <div class="project-number">02</div>
+
+            <div class="project-info">
+              <p class="project-type">ERP SYSTEM</p>
+
+              <h3>경영 관리 시스템</h3>
+
+              <p class="project-description">실제 업무에서 발생한 휴가와 IT 자산 관리의 비효율을 개선하기 위해 구축한 사내 ERP 시스템입니다.</p>
+
+              <div class="project-contribution">
+                <strong>My Contribution</strong>
+
+                <ul>
+                  <li>직원 | 근태 | 휴가 관리 기능 구현</li>
+                  <li>역할과 상태에 따른 UI 기능 제어</li>
+                  <li>TanStack Query 기반 서버 상태 캐싱</li>
+                  <li>키보드 포커스 접근성 개선</li>
+                </ul>
+              </div>
+
+              <div class="tags" aria-label="사용 기술">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Supabase</span>
+                <span>TanStack Query</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="GITHUB_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase GitHub 보기">
+                <span>GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="DEPLOY_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase 배포 사이트 보기">
+                <span>Live</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="project-card">
+            <div class="project-number">03</div>
+
+            <div class="project-info">
+              <p class="project-type">AI ASSISTED DEVELOPMENT <span class="project-status" aria-label="프로젝트 진행 상태">진행중</span></p>
+
+              <h3>랜딩 및 기술 쇼케이스</h3>
+
+              <p class="project-description">
+                Claude Code와 함께 요구사항 설계부터 구현, 테스트, 리팩터링까지 반복하며 AI와 협업하는 개발 프로세스를 구축하고 있는 프로젝트입니다.
+              </p>
+
+              <div class="project-contribution">
+                <strong>My Contribution</strong>
+
+                <ul>
+                  <li>PRD, Spec, ADR 기반 요구사항 설계</li>
+                  <li>AI 인터뷰를 통한 요구사항 검증</li>
+                  <li>TDD , Security , E2E 테스트 프로세스 구성</li>
+                  <li>캐싱 적용 후 응답 시간 7.16s → 0.17s 개선</li>
+                </ul>
+              </div>
+
+              <div class="tags" aria-label="사용 기술">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Claude Code</span>
+                <span>TanStack Query</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="GITHUB_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase GitHub 보기">
+                <span>GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="DEPLOY_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase 배포 사이트 보기">
+                <span>Live</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 -->
+          <article class="project-card">
+            <div class="project-number">04</div>
+
+            <div class="project-info">
+              <p class="project-type">E-COMMERCE</p>
+
+              <h3>쇼핑 플랫폼</h3>
+
+              <p class="project-description">
+                실제 커머스 서비스의 흐름을 고려하여 상품 조회부터 검색, 필터링, 페이지네이션, 장바구니까지 구현한 협업 프로젝트입니다.
+              </p>
+
+              <div class="project-contribution">
+                <strong>My Contribution</strong>
+
+                <ul>
+                  <li>상품 목록 / 상세 페이지 구현</li>
+                  <li>검색 | 필터링 | 페이지네이션 구현</li>
+                  <li>성능 저하를 측정하고 이미지 추상화 구조 개선</li>
+                  <li>Lighthouse Performance 72 → 95 개선</li>
+                </ul>
+              </div>
+
+              <div class="tags" aria-label="사용 기술">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>Supabase</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="GITHUB_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase GitHub 보기">
+                <span>GitHub</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href="DEPLOY_URL" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Interactive Showcase 배포 사이트 보기">
+                <span>Live</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills section" aria-labelledby="skills-title">
+        <div class="section-label">03 / SKILLS</div>
+
+        <div class="section-heading">
+          <h2 id="skills-title">What I Build</h2>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-item">
+            <span>01</span>
+            <h3>Frontend</h3>
+
+            <div class="tags" aria-label="Frontend 기술">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </article>
+
+          <article class="skill-item">
+            <span>02</span>
+            <h3>UI & Interaction</h3>
+
+            <div class="tags" aria-label="UI 및 인터랙션 기술">
+              <span>GSAP</span>
+              <span>R3F</span>
+              <span>Three.js</span>
+              <span>Responsive Design</span>
+              <span>CSS Animation</span>
+            </div>
+          </article>
+
+          <article class="skill-item">
+            <span>03</span>
+            <h3>Data & Quality</h3>
+
+            <div class="tags" aria-label="데이터 및 품질 관련 기술">
+              <span>TanStack Query</span>
+              <span>Zustand</span>
+              <span>Supabase</span>
+              <span>Lighthouse</span>
+              <span>Playwright</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact section" aria-labelledby="contact-title">
+        <p class="eyebrow">CONTACT</p>
+
+        <h2 id="contact-title">
+          Let's
+          <span class="reveal-text">
+            <span>build</span>
+          </span>
+          <br />
+          something
+          <span class="reveal-text">
+            <span>better.</span>
+          </span>
+        </h2>
+
+        <a href="mailto:syp7875@naver.com" class="contact-link"> syp7875@naver.com ↗ </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span> © 2026 PARK SEONGYUN </span>
+
+      <span> FRONTEND DEVELOPER </span>
+    </footer>
+
+    <div class="cursor" aria-hidden="true"></div>
+  </body>
+</html>

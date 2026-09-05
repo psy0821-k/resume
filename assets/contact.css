@@ -1,0 +1,54 @@
+.contact {
+  min-height: 80vh;
+
+  background: var(--primary);
+  color: white;
+}
+
+.contact h2 {
+  font-size: clamp(4rem, 10vw, 10rem);
+  line-height: 0.85;
+  letter-spacing: -0.07em;
+}
+
+.contact-link {
+  display: inline-block;
+
+  margin-top: 70px;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+
+  border-bottom: 1px solid white;
+}
+
+/* TEXT REVEAL */
+
+.reveal-text {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.reveal-text > span {
+  display: inline-block;
+  transform: translateY(110%);
+}
+
+/* 정상 애니메이션 */
+.reveal-text > span.is-visible {
+  animation: reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 동작 줄이기 전용: transition/animation 없이 바로 등장 */
+.reveal-text > span.is-reduced {
+  transform: translateY(0);
+}
+
+@keyframes reveal-up {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,36 @@
+.cursor {
+  position: fixed;
+  z-index: 9999;
+
+  width: 3rem;
+  height: 3rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: #fff;
+  mix-blend-mode: difference;
+
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+}
+
+body.is-cursor-visible .cursor {
+  opacity: 1;
+}
+
+@media (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    transition: none;
+  }
+}
