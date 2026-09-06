@@ -3,7 +3,6 @@ import './util/off-canvas-menu.js';
 import './util/cursor.js';
 
 const header = document.querySelector('.header');
-const cards = document.querySelectorAll('.strength-card, .project-card');
 
 let lastScrollY = window.scrollY;
 
