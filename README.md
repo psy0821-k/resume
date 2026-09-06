@@ -159,18 +159,9 @@ Loop
 - Supabase Query를 활용한 검색 / 필터 처리
 - URLSearchParams를 활용한 검색 / 필터 / 페이지 상태 관리
 - TanStack Query 기반 서버 상태 관리
-- 이미지 로딩 전략 적용
 - Lighthouse를 통한 성능 검증
 - Git / PR 기반 협업
 - 기능 단위 Issue / PR로 협업 방식 개선
-
-**Performance**
-
-이미지 최적화 로직을 재사용하기 위해 컴포넌트화했지만 실제 측정에서 성능 저하를 발견했습니다.
-
-추상화를 제거하고 성능을 다시 측정한 결과:
-
-**Lighthouse Performance 72 → 95**
 
 **Tech**
 
